@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        .demo1{
+            width:50px;
+            height:50px;
+            background-color:yellowgreen;
+            transition:width 10s;
+        }
+        .demo2{
+            width:50px;
+            height:50px;
+            background-color:yellow;
+            transition:width 10s;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .xian{
+            color: red;
+            display: none;
+            line-height: 60px;
+            margin-left: 20px;
+            position:absolute;
+        }
+        .lin{
+            display: inline-block;
+            line-height: 60px;/*这两行代码没有起作用*/
+        }
+        div:hover{
+            width: 300px;
+        }
+        div:hover .yi{
+            display: inline-block;
+        }
+        div:hover .er{
+            float: right;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="demo1">
+    <span class="xian">visitor</span>
+    <span class="lin"> <img src=""/> </span>
+</div>
+<div class="demo2">
+    <span class="xian">student</span>
+    <span class="lin"> <img src=""/> </span>
+</div>
+</body>
+</html>
